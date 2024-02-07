@@ -6,8 +6,6 @@
   font-size: 10px;
   font-family: 'Inconsolata', sans-serif;
 }
-
-
 body{
   height: 100vh;
   header{
@@ -30,11 +28,30 @@ body{
         justify-content: space-around;
         li,a{
           font-size: 1.8rem;
+          position: relative;
           list-style: none;
           cursor: pointer;
           text-decoration: none;
           color:#000;
         }
+        li::after {
+          content: "";
+          position: absolute;
+          height: 3px;
+          width: 0%;
+          left: -30%;
+          background-color: green;
+          bottom: -5px;
+          transition: 0.3s;
+          }
+          li:hover::after {
+            width: 160%;
+          }
+          a{
+            color:green;
+            text-transform: uppercase;
+          }
+       
       }
     }
     .burger-menu{
@@ -42,6 +59,9 @@ body{
     }
   }
 }
+
+
+
 
 
 @media screen and (max-width: 650px){
@@ -78,6 +98,10 @@ body {
 
 
 
+
+
+
+//helpers
 .active{
   display: flex !important;
 }

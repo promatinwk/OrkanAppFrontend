@@ -32,10 +32,28 @@ body header .navigation .menu {
 }
 body header .navigation .menu li, body header .navigation .menu a {
   font-size: 1.8rem;
+  position: relative;
   list-style: none;
   cursor: pointer;
   text-decoration: none;
   color: #000;
+}
+body header .navigation .menu li::after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 0%;
+  left: -30%;
+  background-color: green;
+  bottom: -5px;
+  transition: 0.3s;
+}
+body header .navigation .menu li:hover::after {
+  width: 160%;
+}
+body header .navigation .menu a {
+  color: green;
+  text-transform: uppercase;
 }
 body header .burger-menu {
   display: none;
