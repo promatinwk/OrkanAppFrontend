@@ -58,6 +58,16 @@ body{
       display: none;
     }
   }
+  section{
+    height: 100vh;
+  }
+  .club{
+    background-color: rgba($color: #19880f, $alpha: 0.7);
+  }
+  footer{
+    height: 20vh;
+    border-top: 1px solid black;
+  }
 }
 
 

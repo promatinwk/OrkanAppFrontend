@@ -58,6 +58,16 @@ body header .navigation .menu a {
 body header .burger-menu {
   display: none;
 }
+body section {
+  height: 100vh;
+}
+body .club {
+  background-color: rgba(25, 136, 15, 0.7);
+}
+body footer {
+  height: 20vh;
+  border-top: 1px solid black;
+}
 
 @media screen and (max-width: 650px) {
   body {
